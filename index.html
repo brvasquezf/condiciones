@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="section_img_border">
+            <div class="img_border">
+                <h1>Click y ve lo que pasa :O</h1>
+                <img onclick="add_border()" id="img-1" src="./assets/img/img-1.jpg" alt="">
+            </div>
+        </section>
+        <section class="sticker-section">
+            <h1>En esta sección puedes elegir una cantidad de stickers</h1>
+            <p>Recuerda que puedes seleccionar 10 stickers como máximo</p>
+            <div class="cards-container">
+                <div class="sticker-card">
+                    <img src="./assets/img/img-2.jpg" alt=""/>
+                    <input id="sticker01" type="number" min="0"/>
+                </div>
+                <div class="sticker-card">
+                    <img src="./assets/img/img-3.jpg" alt=""/>
+                    <input id="sticker02" type="number" min="0"/>
+                </div>
+                <div class="sticker-card">
+                    <img src="./assets/img/img-4.jpeg" alt=""/>
+                    <input id="sticker03" type="number" min="0"/>
+                </div>
+            </div>
+            <button onclick="sendOrder()" id="order-btn">Seleccionar</button>
+            <p id="alert-msj"></p>
+        </section>
+        <section class="password-section">
+            <h1>Ingresa tu contraseña de tres dígitos</h1>
+            <div class="digit-box">
+                <select name="digit01" id="digit01">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="digit02" id="digit02">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="digit03" id="digit03">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <button onclick="sendPassword()" id="password-btn">Ingresar</button>
+            <p id="password-msj"></p>
+        </section>
+
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
